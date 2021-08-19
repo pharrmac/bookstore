@@ -1,0 +1,75 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+GET http://localhost:8080/MargaretBookstoreOrder/api/categories
+Accept: application/json
+
+###
+
+POST http://localhost:8080/MargaretBookstoreTransact/api/orders
+Connection: keep-alive
+sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/MargaretBookstoreTransact/checkout
+Accept-Language: en-US,en;q=0.9
+Cookie: Idea-f41fd6ae=1aaff8e1-14c9-4af5-abf1-155407dc3046
+Content-Type: application/json
+
+{
+  "cart": {
+    "items": [
+      {
+        "book": {
+          "bookId": 1001,
+          "categoryId": 1001,
+          "title": "People We Meet On Vacation",
+          "author": "Emily Henry",
+          "description": "Poppy and Alex. Alex and Poppy. They have nothing in common. She’s a wild child; he wears khakis. She has insatiable wanderlust; he prefers to stay home with a book. And somehow, ever since a fateful car share home from college many years ago, they are the very best of friends. For most of the year they live far apart—she’s in New York City, and he’s in their small hometown—but every summer, for a decade, they have taken one glorious week of vacation together. ",
+          "price": 1399,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true
+        },
+        "quantity": 2
+      },
+      {
+        "book": {
+          "bookId": 1002,
+          "categoryId": 1001,
+          "title": "The Last Thing He Told Me",
+          "author": "Laura Dave",
+          "description": "Before Owen Michaels disappears, he smuggles a note to his beloved wife of one year: Protect her. Despite her confusion and fear, Hannah Hall knows exactly to whom the note refers—Owen’s sixteen-year-old daughter, Bailey. Bailey, who lost her mother tragically as a child. Bailey, who wants absolutely nothing to do with her new stepmother.",
+          "price": 2049,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "meg mac",
+    "address": "23 elm st",
+    "phone": "540 888 1111",
+    "email": "tom@gmail.com",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  }
+}
+
+###
+
