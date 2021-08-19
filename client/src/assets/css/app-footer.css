@@ -1,0 +1,39 @@
+footer {
+  background: var(--primary-background-color);
+  position: relative;
+  top: -1em;
+}
+
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 3px solid #e6e6e6;
+  padding-top: 16px;
+}
+.footer-links {
+  display: flex;
+  flex-direction: row;
+}
+.footer-links a {
+  flex: 0 0 7em;
+  padding: 1em 0 0 1em;
+}
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row-reverse;
+}
+
+.directions {
+  background: #ffffff url(../images/site/map_icon.png) no-repeat 5.8em 0.9em;
+}
+
+.copyright {
+  flex: 0 1 auto;
+  text-align: center;
+}
+
+.copyright span {
+  font-size: .75rem;
+}
