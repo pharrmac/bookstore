@@ -1,0 +1,33 @@
+.category {
+    background-color: var(--secondary-background-color);
+    top: -1.1em;
+    position: relative;
+  }
+
+  .category-image-items {
+    display: flex;
+    flex-direction: row;
+    padding: 2em 1em 1em 1em;
+    gap: 2em;
+    height: 7rem;
+  }
+
+
+.category-image-items a {
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .category-image-items div:hover {
+    border-top: 3px #a09e9e solid;
+    position: relative;
+    top: -3px;
+    background-color: var(--button-hover-background);
+  }
+
+.category-image-items div {
+    padding: 0.5em 0.5em 0.5em .2em;
+    border-top: 1px #a09e9e solid;
+    cursor: pointer;
+  }
+

@@ -1,0 +1,177 @@
+@media screen and (max-width: 513px) {
+    button.checkout.button.mobile {
+        margin: 1em 0;
+    }
+    .cart-table.mobile {
+        margin: 2em 0em;
+        width: 100%;
+        border-spacing: 3px;
+        font-size: smaller;
+    }
+    .cart-page.mobile {
+        margin: 1.5em 1em;
+    }
+}
+@media screen and (max-width: 565px) {
+    .button-group.mobile {
+        float: none;
+        text-align: center;
+    }
+    .cart-table.mobile {
+        margin: 2em 0em;
+        width: 100%;
+    }
+    .add-sub.mobile {
+        width: 50px;
+    }
+}
+@media screen and (max-width: 625px) {
+    .bottom-wrapper.mobile {
+        margin: 3em 0 !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    .empty-msg {
+        margin-top: 4em;
+    }
+}
+@media screen and (max-width: 870px) {
+    .bookstore-logo .logo {
+        max-width: 150px;
+    }
+    .header-wrapper {
+        background-color: #ccc;
+        padding: .5em 0;
+        margin-top: 1em;
+    }
+    .header-wrapper h1 {
+        margin: 0 0 0 1em;
+    }
+    .categories {
+        top: -4em;
+        position: relative;
+    }
+    .cart-section .cart {
+        position: absolute;
+        right: 1.9em;
+        top: -14px;
+    }
+    .header-dropdown .search {
+        width: 100%;
+        right: 12px;
+        top: -53px;
+        position: absolute;
+    }
+    .search .magnify {
+        display: none;
+    }
+    .search .search-bar {
+        border: 1px solid #ccc;
+        flex: 0 0 auto;
+    }
+    .search .search-field {
+        display: flex;
+        margin: 0 0 0 1em;
+    }
+    .search .button {
+        padding: .8em 1.5em;
+        margin-left: .5em;
+    }
+
+    /* mobile css applied when menu expanded */
+    .mobile .bookstore-logo .logo,
+    .mobile .cart-section {
+        display: inline-block;
+    }
+    .mobile .book-wrapper {
+        top: -4em;
+        position: relative;
+    }
+    .mobile .header-dropdown {
+        display: block;
+        margin: 5.4em 0 0 0;
+    }
+    .mobile .category-dropdown {
+        display: none;
+        background-color: #687a9a;
+        padding: 1em 1.1em;
+        min-width: 100%;
+        position: inherit;
+    }
+    .mobile .category-dropdown div {
+        font-size: var(--mobile-reduced-font-size);
+    }
+    .mobile .category-dropdown.cat-menu-open {
+        display: block;
+    }
+    .mobile .category-dropdown.cat-menu-closed {
+        display: none;
+    }
+
+    header { flex-direction: column; }
+
+    /* HOME dropdown menu */
+
+
+    .container.mobile {
+        display: block;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    #myLinks {
+        display: none;
+    }
+
+    #myLinks.main-menu-open {
+        display: block;
+    }
+
+    /* Style navigation menu links */
+
+    .container .hamburger {
+        position: absolute;
+        display: block;
+        font-size: larger;
+        top: 1em;
+        right: 1em;
+    }
+    .cart-section {
+        margin: 2em 0;
+    }
+
+    .categories a {
+        margin: 0;
+        color: white !important;
+    }
+
+    .dropdown-cat {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        background: #506282;
+        width: 100%;
+    }
+    .dropdown-cat:hover,
+    .dropdown-cat:active,
+    .dropdown-cat:focus{
+        background: #7185aa;
+    }
+
+    /* hide category nav */
+    .categoryNav {
+        display: none;
+    }
+
+    /* checkout page */
+    .checkout-page-body form.checkout {
+        margin: 3em;
+    }
+}
+
+@media screen and (max-width: 1042px) {
+    .book-wrapper #book-boxes {
+        grid-template-columns: repeat(auto-fit, minmax(283px, 1fr));
+    }
+}
